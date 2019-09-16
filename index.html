@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="main.css" rel="stylesheet">
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+</head>
+<body>
+<div class="container">
+  <div class="title-text">
+    <p><b>Depreciation Calculator</b> </p>
+</div>
+<hr class="divider">
+      <div class="input-box" id="input-01">
+        <p><b>Asset Cost ($):</b></p> <input name="a" id="a" class="input" value="11,000">
+      </div>
+  <!-- div input-01 -->
+      <div class="input-box" id="input-02">
+        <p><b>Salvage Cost ($):</b></p> <input name="b" id="b" class="input" value="1,000"> 
+      </div>
+  <!-- div input-02 -->
+
+      <div class="input-box" id="input-03">
+        <p><b>Period (userful life):</b></p> <input name="c" id="c" class="input" value="5">
+        <span> years</span>
+      </div>
+  <!-- div input-03 -->
+      <div class="calculate-button-area">       
+            <button type="button" id="button-main" class="buttons" onclick="document.getElementById('tableBox').innerHTML = '', doDaMaths(document.getElementById('a').value,document.getElementById('b').value, document.getElementById('c').value)">Calculate</button>
+          
+            <button type="button" id="button-clear" class="buttons" onclick="document.getElementById('a').value = '', document.getElementById('b').value = '',document.getElementById('c').value = '', document.getElementById('error-msg'), document.getElementById('myDivChart').innerHTML = '', document.getElementById('tableBox').innerHTML = '', document.getElementById('perYear').innerHTML = ''">Clear</button>
+      </div>
+  <!-- div calculate button area -->
+
+        <div class="test">
+        <p>*Numbers are rounded to the nearest hundredths.</p>
+        </div> 
+  <!-- test/ disclaimer text -->
+        <div class="error" id="error-msg">
+        <p></p>
+        </div> 
+        <!-- error message -->
+
+  <hr class="divider">
+
+        <p><b>Answer: </b></p>
+        <br>
+        <span><b>Depreciation per year: </b></span>
+        <span class="input-box" id="">
+         <b id="perYear"></b>
+       </span>
+       <br>
+
+        <table id="tableBox" style="border:1px solid black;border-collapse:collapse;">
+          
+        </table>
+        <br>
+        <div id="myDivChart"></div>
+
+<hr class="divider">
+</div>
+<!-- div-container -->
+
+<script src="main.js"></script>
+</body>
+</html>

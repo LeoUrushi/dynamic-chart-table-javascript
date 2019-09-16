@@ -1,0 +1,115 @@
+html, body {
+  width: 100%;
+  height: 100%;
+}
+body {
+  font-family: "Arial",Helvetica,sans-serif;
+}
+.container {
+  margin-left: 1%;
+  margin-right: 1%;
+  width:60%;
+}
+.title-text {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  text-align: left;
+}
+.divider {
+  margin: 3px 0;
+/*   width: 70%; */
+}
+.input-box {
+  text-align: left;
+  padding: 10px;
+}
+.input-text {
+  margin-left: 1px;
+  margin-right: 1px;  
+}
+.input {
+  height: 20px;
+}
+.calculate-button-area {
+  text-align: left;
+  padding: 10px;
+}
+
+/* #Style the table */
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+th {
+  background-color: grey;
+  color: white;
+  /*font-size:13px;*/
+}
+td {
+  text-align: center;
+    padding-top:4px;
+    padding-bottom: 4px;
+}
+td:first-of-type {
+  text-align: left;
+}
+
+/*Turn off up-down spinner for input fields*/
+.input [type='number'] {
+  -moz-appearance:textfield;
+}
+.input::-webkit-outer-spin-button,
+.input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.output [type='number'] {
+  -moz-appearance:textfield;
+}
+.output::-webkit-outer-spin-button,
+.output::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.buttons {
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  cursor: pointer;
+  height: 35px;
+  font-size: 17px;
+}
+#button-main {
+  margin-right: 3px;
+  background-color: green;
+}
+#button-main:hover {
+  background-color: darkgreen;
+}
+#button-clear {
+  margin-left: 3px;
+  background-color: grey;
+}
+#button-clear:hover {
+  background-color: darkgrey;
+}
+.test {
+  padding: 10px;
+  color: grey;
+}
+.error {
+  padding-left: 10px;
+  padding-top: 2px;
+  color:red;
+}
+
+
